@@ -117,7 +117,16 @@ Two separate threshold values are used to prevent frequent switching of the stre
 ---
 
 ## Circuit Connections
+AT89C51                    LED
 
+P2.0 ───── 330Ω ───── LED1
+P2.1 ───── 330Ω ───── LED2
+P2.2 ───── 330Ω ───── LED3
+P2.3 ───── 330Ω ───── LED4
+P2.4 ───── 330Ω ───── LED5
+P2.5 ───── 330Ω ───── LED6
+P2.6 ───── 330Ω ───── LED7
+P2.7 ───── 330Ω ───── LED8
 ### Potentiometer – LDR Simulation
 
 | Potentiometer Pin | STM32 Connection |
@@ -199,7 +208,9 @@ GND  -----| GND           |
 ---
 
 ## Expected Output
-
+LED1 → LED2 → LED3 → LED4
+                      ↓
+LED8 ← LED7 ← LED6 ← LED5
 ### Bright Condition
 
 ~~~text
